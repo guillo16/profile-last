@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 24px;
+  padding: 20px 0px;
 }
 
 .cards {
@@ -19,6 +20,7 @@
 .card-title {
   display: flex;
   align-items: center;
+  margin-bottom: 4px;
 
   h2 {
     font-size: 18px;
