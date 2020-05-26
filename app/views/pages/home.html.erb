@@ -4,7 +4,7 @@
     <p>Love desing</p>
     <div class="button-container">
       <%= link_to 'CONTACT','#', class: 'btn-main'  %>
-      <%= link_to 'ABOUT','#', class: 'btn-main secondary'  %>
+      <%= link_to 'ABOUT','#portfolio', class: 'btn-main secondary'  %>
     </div>
   </div>
 </div>
@@ -20,25 +20,7 @@
 <section id="about">
   <%= render 'shared/about' %>
 </section>
-<%= form_for @contact do |f| %>
-    <% if flash[:error].present? %>
-        <p> flash[:error]</p>
-    <% end %>
-    <%= f.label :name %> <br>
-    <%= f.text_field :name, required: true %>
+<div id="contact">
+ <%= render 'contacts/new' %>
+</div>
 
-    <br>
-    <%= f.label :email %> <br>
-    <%= f.text_field :email, required: true %>
-
-    <br>
-    <%= f.label :message %> <br>
-    <%= f.text_area :message, as: :text %>
-
-
-    <%= f.label :nickname %> <br>
-    <%= f.text_field :nickname, hint: 'leave this field blank' %>
-
-
-    <%= f.submit 'Send Message', class: "button" %>
-  <% end %>

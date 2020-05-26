@@ -1,0 +1,20 @@
+
+console.log("This is the create.js.erb file");
+// Render flash message
+
+// s
+function refreshForm(innerHTML) {
+  guillo = document.getElementById('contact')
+  guillo.innerHTML = innerHTML;
+}
+
+
+
+
+
+
+<% if @contact.errors.any? %>
+refreshForm('<%= j render "contacts/new"%>')
+<% else %>
+location.replace('<%= root_path %>')
+<% end %>
