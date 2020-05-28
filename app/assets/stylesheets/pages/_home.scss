@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 
 body {
-  background-color: black;
+  background-color: #121216;
 }
 .portfolio-container {
   width: 90%;
@@ -16,7 +16,7 @@ body {
   img {
     border-radius: 8px;
     width: 100%;
-    height: 250px;
+    height: 180px;
     object-fit: cover;
   }
 }
@@ -104,6 +104,12 @@ body {
 }
 
 @media(max-width: 600px) {
+
+  .cards {
+    img {
+      height: 180px;
+    }
+  }
   .card-title {
     display: flex;
     align-items: center;
