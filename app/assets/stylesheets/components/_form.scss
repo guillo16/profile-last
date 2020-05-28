@@ -1,0 +1,23 @@
+.forms {
+  width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: lightgrey;
+  border-radius: 8px;
+  p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+
+@media(max-width: 600px) {
+  .forms {
+  width: 90%;
+  padding: 40px;
+  p {
+    margin-bottom: 0px;
+  }
+}
+}
