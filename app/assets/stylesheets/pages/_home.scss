@@ -1,9 +1,14 @@
-// Specific CSS for your home-page
+//body
+body {
+  background-color: #121216;
+}
+
+//where the cards are
 .portfolio-container {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 24px;
   padding: 20px 0px;
 }
@@ -12,7 +17,7 @@
   img {
     border-radius: 8px;
     width: 100%;
-    height: 250px;
+    height: 225px;
     object-fit: cover;
   }
 }
@@ -22,13 +27,15 @@
   align-items: center;
   margin-bottom: 4px;
 
-  h2 {
-    font-size: 18px;
+  p {
+    font-size: 16px;
     margin-bottom: 0px;
+    color: white;
   }
 }
 
-.main-title h2 {
+//titles of the page
+.main-title p {
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -36,15 +43,17 @@
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   grid-gap: 20px;
-  font-weight: bold;
   padding-bottom: 10px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 24px;
 }
 
-.main-title h2:before, .main-title h2:after {
+.main-title p:before, .main-title p:after {
   display: block;
   content: '';
   height: 3px;
-  background-color: black;
+  background-color: white;
 }
 
 //About container
@@ -65,7 +74,9 @@
   }
 
   p {
+    color: white;
     font-size: 14px;
+
   }
 }
 
@@ -92,13 +103,19 @@
     }
   }
 }
+
 @media(max-width: 600px) {
+
+  .cards {
+    img {
+      height: 225px;
+    }
+  }
   .card-title {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 4px;
-
     h2 {
       font-size: 18px;
       margin-bottom: 0px;
@@ -107,13 +124,13 @@
 
   .skills-container {
    img {
-    height: 360px;
+      height: 360px;
+    }
   }
-}
 
-.about-container {
-  img {
-    height: 300px;
+  .about-container {
+    img {
+      height: 300px;
+    }
   }
-}
 }
