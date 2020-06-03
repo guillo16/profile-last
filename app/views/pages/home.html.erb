@@ -5,8 +5,8 @@
       <span id="banner-typed-text"></span>
     </p>
     <div class="button-container">
-      <%= link_to 'CONTACT','#', class: 'btn-main'  %>
-      <%= link_to 'ABOUT','#portfolio', class: 'btn-main secondary'  %>
+      <%= link_to 'PROJECTS','#portfolio', class: 'btn-main'  %>
+      <%= link_to 'CONTACT','#contacto', class: 'btn-main secondary'  %>
     </div>
   </div>
 </div>
@@ -16,6 +16,10 @@
 <section id="portfolio">
   <%= render 'shared/profile_cards' %>
 </section>
+<div class="main-title mb-3">
+  <p>SKILLS</p>
+</div>
+<%= render 'shared/skill' %>
 <div class="main-title mb-3">
   <p>ABOUT</p>
 </div>
