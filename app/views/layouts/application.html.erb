@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>GV - Guillermo Varela Full-Stack Developer</title>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= favicon_link_tag asset_path('GV.svg') %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-  </head>
-  <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    <%= yield %>
-    <%= render 'shared/footer' %>
-    <%= javascript_include_tag 'application' %>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>GV - Guillermo Varela Full-Stack Developer</title>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= favicon_link_tag asset_path('GV.svg') %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <meta property='og:title' content="Profile"/>
+  <meta property='og:image' content='https://res.cloudinary.com/dmbom1kyl/image/upload/c_scale,w_874/v1593714919/Captura_de_Pantalla_2020-07-02_a_la_s_15.34.30_ytt2v1.jpg'/>
+  <meta property=og:description content='My Profile'/>
+  <meta property='og:url' content='http://www.guillermo-varela.com/#about'/>
+  <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+</head>
+<body>
+  <%= render 'shared/navbar' %>
+  <%= render 'shared/flashes' %>
+  <%= yield %>
+  <%= render 'shared/footer' %>
+  <%= javascript_include_tag 'application' %>
 
-    <%= javascript_pack_tag 'application' %>
-  </body>
+  <%= javascript_pack_tag 'application' %>
+</body>
 </html>
