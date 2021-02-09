@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.6.3'
+
+ruby "2.6.5"
 
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
-gem 'puma'
-gem 'rails', '5.2.4.2'
+gem "puma", "~> 4.1"
+gem "rails", "~> 6.0.3", ">= 6.0.3.4"
 gem 'redis'
 gem 'mail_form'
 
