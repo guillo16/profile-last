@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
-  grid-gap: 16px;
+  grid-gap: 24px;
   padding: 20px 0px;
 }
 
@@ -18,7 +18,7 @@ body {
     border-radius: 8px;
     width: 100%;
     height: 270px;
-    object-fit: cover;
+    object-fit: fill;
   }
 }
 
@@ -148,6 +148,15 @@ body {
 }
 
 @media(max-width: 600px) {
+  .portfolio-container {
+    grid-gap: 32px;
+  }
+
+  .cards {
+    img {
+      height: 218px;
+    }
+  }
   .card-title {
     display: flex;
     align-items: center;
